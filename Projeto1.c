@@ -113,6 +113,7 @@ system ("cls");
     printf("\t1- Registrar nomes\n");
     printf("\t2- Consultar nomes\n");
     printf("\t3- Deletar nomes\n");
+    printf("\t4- Sair do sistema\n\n\n");
     printf("\topção:");
     scanf("%d",&op);
     
@@ -132,7 +133,11 @@ system ("cls");
     deletar();
     break;
     
-   
+    case 4:
+    printf("Obirgado por ultilizar o sistema!");
+    return 0;
+    break;
+    
     
     default:
     printf("Esclha uma opção acima!\n");
