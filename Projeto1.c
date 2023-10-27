@@ -97,51 +97,71 @@ int deletar()
 
 
 int main()
-{
-int op = 0;
-int x=1;
+	{
+	int op = 0;
+	int x=1;
+	char senha[]="a";
+	int comp;
+	
+	printf("\t__ Cartório ADR __\n\n\n");
+	printf("Login de administrador!\n\nDigite sua senha: ");
+	scanf("%s",senha);
 
-   for (x=1;x=1;)
+	comp = strcmp(senha, "admin");
 {
+
+	if(comp== 0)
+	
+	
+
+	
+
+	   for (x=1;x=1;)
+	{
+	
 	
 system ("cls");
 
-     setlocale(LC_ALL,"Portuguese");
-    
-    printf("\t__ Cartório ADR __\n\n\n");
-    printf("\tEscolha a opção desejada\n\n");
-    printf("\t1- Registrar nomes\n");
-    printf("\t2- Consultar nomes\n");
-    printf("\t3- Deletar nomes\n");
-    printf("\t4- Sair do sistema\n\n\n");
-    printf("\topção:");
-    scanf("%d",&op);
-    
-
-    
-    switch (op)
-    {
-    case 1:
-    registrar();
-    break;
-    
-    case 2:
-    consultar();
-    break;
-    
-    case 3:
-    deletar();
-    break;
-    
-    case 4:
-    printf("Obirgado por ultilizar o sistema!");
-    return 0;
-    break;
-    
-    
-    default:
-    printf("Esclha uma opção acima!\n");
-    system ("pause");
-    }
+		     setlocale(LC_ALL,"Portuguese");
+		    
+		    printf("\t__ Cartório ADR __\n\n\n");
+		    printf("\tEscolha a opção desejada\n\n");
+		    printf("\t1- Registrar nomes\n");
+		    printf("\t2- Consultar nomes\n");
+		    printf("\t3- Deletar nomes\n");
+		    printf("\t4- Sair do sistema\n\n\n");
+		    printf("\topção:");
+		    scanf("%d",&op);
+		    
+		
+		    
+		    switch (op)
+		    {
+		    case 1:
+		    registrar();
+		    break;
+		    
+		    case 2:
+		    consultar();
+		    break;
+		    
+		    case 3:
+		    deletar();
+		    break;
+		    
+		    case 4:
+		    printf("Obirgado por ultilizar o sistema!");
+		    return 0;
+		    break;
+		    
+		    
+		    default:
+		    printf("Esclha uma opção acima!\n");
+		    system ("pause");
+   		 	}
+		}
+				else
+		printf("\nSenha incorreta!");
 }
-  }
+}
+    
